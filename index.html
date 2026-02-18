@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>子域名接管测试 - test.baiying.cn</title>
+    <title>子域名接管成功 - test.baiying.cn</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .success { color: green; font-size: 24px; }
+        .info { color: blue; margin-top: 20px; }
+    </style>
 </head>
 <body>
-    <h1>子域名接管成功！</h1>
+    <h1 class="success">✅ 子域名接管成功！</h1>
     <p>test.baiying.cn 已被成功接管</p>
+    
+    <div class="info">
+        <h3>攻击验证信息：</h3>
+        <ul>
+            <li>接管时间: <span id="time"></span></li>
+            <li>攻击者: VAENPP</li>
+            <li>目标: test.baiying.cn</li>
+            <li>状态: 完全控制</li>
+        </ul>
+    </div>
+
     <script>
-        // 可以添加恶意代码
-        console.log('子域名接管测试成功');
+        document.getElementById('time').textContent = new Date().toLocaleString();
+        console.log('子域名接管测试成功 - test.baiying.cn');
+        
+        // 可以添加更多恶意功能
+        // 例如：收集访问者信息、重定向等
     </script>
 </body>
 </html>
